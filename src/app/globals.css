@@ -999,3 +999,81 @@ footer {
     -webkit-print-color-adjust: exact;
   }
 }
+/* Engineering and local Excel import */
+.work-editor {
+  min-width: 1050px;
+  margin: 20px 0;
+}
+.work-editor td {
+  vertical-align: top;
+  padding: 10px;
+  white-space: normal;
+}
+.work-editor input {
+  min-width: 95px;
+  margin: 4px 0;
+}
+.work-editor td:nth-child(2) {
+  min-width: 230px;
+}
+.work-editor small {
+  display: block;
+  line-height: 1.7;
+}
+.work-editor textarea {
+  width: 100%;
+  min-height: 70px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px;
+  font: inherit;
+  resize: vertical;
+}
+.plan-table {
+  white-space: normal;
+  min-width: 650px;
+}
+.plan-table td:nth-child(3) {
+  min-width: 280px;
+}
+.wrap {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.check-label {
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+.check-label input {
+  width: 18px;
+  min-height: 18px;
+  accent-color: var(--green);
+}
+details {
+  margin: 16px 0;
+  overflow-wrap: anywhere;
+}
+summary {
+  cursor: pointer;
+  color: var(--green);
+  font-weight: 600;
+  line-height: 2;
+}
+.import-warning {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+}
+.panel.padded > label {
+  margin: 18px 0;
+}
+.sidebar nav {
+  overflow-y: auto;
+}
+.card .actions {
+  margin-top: 20px;
+}
+.work-editor input:invalid {
+  border-color: #ba7869;
+}

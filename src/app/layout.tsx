@@ -1,3 +1,4 @@
+import { WorkStore } from "@/components/work-store";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Store } from "@/components/store";
@@ -11,7 +12,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html lang="zh-CN">
       <body>
         <Store>
-          <Shell>{children}</Shell>
+          <WorkStore>
+            <Shell>{children}</Shell>
+          </WorkStore>
         </Store>
       </body>
     </html>

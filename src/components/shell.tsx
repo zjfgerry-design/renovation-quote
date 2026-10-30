@@ -23,6 +23,9 @@ export function Shell({ children }: { children: React.ReactNode }) {
             ["/materials", "▦", "材料管理"],
             ["/quote", "＋", "创建报价单"],
             ["/preview", "▤", "报价单预览"],
+            ["/templates", "▦", "工程报价模板"],
+            ["/import", "⇧", "Excel 预算导入"],
+            ["/engineering", "▤", "工程报价单"],
           ].map(([href, icon, name]) => (
             <Link
               key={href}
@@ -50,6 +53,9 @@ export function Shell({ children }: { children: React.ReactNode }) {
                   "/materials": "材料管理",
                   "/quote": "创建报价单",
                   "/preview": "报价单预览",
+                  "/templates": "工程报价模板",
+                  "/import": "Excel 预算导入",
+                  "/engineering": "工程报价单",
                 } as Record<string, string>
               )[path]
             }
